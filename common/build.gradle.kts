@@ -1,13 +1,10 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
-    alias(libs.plugins.androidx.room)
-    alias(libs.plugins.dagger.hilt)
-    alias(libs.plugins.kotlin.kapt)
 }
 
 android {
-    namespace = "com.app.data"
+    namespace = "com.app.common"
     compileSdk = 34
 
     defaultConfig {
@@ -33,27 +30,20 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-
-    room {
-        schemaDirectory("$projectDir/schemas")
-    }
-}
-
-kapt {
-    correctErrorTypes = true
 }
 
 dependencies {
-    implementation(project(":domain"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
-    implementation(libs.androidx.room)
-    kapt(libs.androidx.room.compiler)
-    implementation(libs.androidx.room.ktx)
-    implementation(libs.androidx.datastore)
-    implementation(libs.dagger.hilt)
-    kapt(libs.dagger.hilt.compiler)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.ui)
+    implementation(libs.androidx.ui.tooling.preview)
+    implementation(libs.androidx.material3)
+    implementation(libs.androidx.foundation.layout.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    debugImplementation(libs.androidx.ui.tooling)
+    debugImplementation(libs.androidx.ui.test.manifest)
 }
