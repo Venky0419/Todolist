@@ -51,7 +51,7 @@ fun ConfigureNavigation(navHostController: NavHostController) {
 
         composable(
             TASK_SCREEN, arguments = listOf(navArgument(TASK_ARG_KEY) {
-                type = NavType.StringType
+                type = NavType.IntType
             }),
             enterTransition = {
                 slideIntoContainer(

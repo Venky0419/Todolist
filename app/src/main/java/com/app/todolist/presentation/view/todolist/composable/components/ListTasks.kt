@@ -28,8 +28,8 @@ import com.app.todolist.domain.models.TodoTaskModel
 import com.app.todolist.domain.models.Priority
 import com.app.todolist.ui.theme.LARGE_PADDING
 import com.app.todolist.ui.theme.PRIORITY_INDICATOR_SIZE
-import com.app.todolist.ui.theme.TEXT_WEIGHT_8
 import com.app.todolist.ui.theme.TodolistTheme
+import com.app.todolist.utils.Constants.TEXT_WEIGHT_8
 import com.app.todolist.utils.TestTags
 
 /**

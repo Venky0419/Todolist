@@ -1,6 +1,7 @@
 package com.app.todolist.ui.theme
 
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 /**
  * Created by P,Venkatesh on 06-Aug-24
@@ -13,5 +14,8 @@ val SMALL_PADDING = 6.dp
 val PRIORITY_INDICATOR_SIZE = 12.dp
 val TOP_APP_BAR_HEIGHT = 56.dp
 val ICON_SIZE_120 = 120.dp
-const val ICON_ALPHA_0_5 = 0.5f
-const val TEXT_WEIGHT_8 = 8f
+val ONE_DP = 1.dp
+val HEIGHT_60_DP = 60.dp
+val PADDING_4_DP = 4.dp
+val TEXT_20_SP = 20.sp
+

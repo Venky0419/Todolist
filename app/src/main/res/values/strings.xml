@@ -20,4 +20,10 @@
     <string name="delete_icon">Delete Icon</string>
     <string name="confirm_action">Confirm action</string>
     <string name="alert_dialog_text">This action will delete all tasks. Are you sure?</string>
+    <string name="OK_icon">OK Icon</string>
+    <string name="back_arrow_icon">Back Arrow Icon</string>
+    <string name="drop_down_arrow_icon">Drop-Down Arrow Icon</string>
+    <string name="empty_task_message">Task cannot be empty</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
 </resources>

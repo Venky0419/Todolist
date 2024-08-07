@@ -33,13 +33,13 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideSharedPreferences(app:Application):SharedPreferences{
-        return app.getSharedPreferences(SHARED_PREFERENCE_NAME,Context.MODE_PRIVATE)
+    fun provideSharedPreferences(app: Application): SharedPreferences {
+        return app.getSharedPreferences(SHARED_PREFERENCE_NAME, Context.MODE_PRIVATE)
     }
 
     @Provides
     @Singleton
-    fun providePreferences(sharedPreferences: SharedPreferences):Preferences{
+    fun providePreferences(sharedPreferences: SharedPreferences): Preferences {
         return DefaultPreferences(sharedPreferences)
     }
 

@@ -47,6 +47,10 @@ import com.app.todolist.ui.theme.TOP_APP_BAR_HEIGHT
 import com.app.todolist.ui.theme.TodolistTheme
 import com.app.todolist.ui.theme.Typography
 import com.app.todolist.domain.models.Priority
+import com.app.todolist.ui.theme.PADDING_4_DP
+import com.app.todolist.ui.theme.TEXT_20_SP
+import com.app.todolist.utils.Constants.ANGLE_VALUE_03F
+import com.app.todolist.utils.Constants.ICON_ALPHA_0_5
 import com.app.todolist.utils.TestTags
 import com.app.todolist.utils.TestTags.ListScreen.CLOSE_BUTTON_ACTION
 import com.app.todolist.utils.TestTags.ListScreen.DELETE_ALL_BUTTON_ACTION
@@ -165,7 +169,8 @@ fun SearchAppBar(
             .fillMaxWidth()
             .height(TOP_APP_BAR_HEIGHT)
             .testTag(SEARCH_APP_BAR),
-        color = MaterialTheme.colorScheme.primary
+        color = MaterialTheme.colorScheme.primary,
+        shadowElevation = PADDING_4_DP
     ) {
         TextField(
             modifier = Modifier
@@ -175,9 +180,11 @@ fun SearchAppBar(
             onValueChange = { onTextChange(it) },
             placeholder = {
                 Text(
+                    modifier = Modifier.alpha(ICON_ALPHA_0_5),
                     text = stringResource(id = R.string.search),
                     fontWeight = FontWeight.Normal,
-                    color = Color.White
+                    color = Color.White,
+                    fontSize = TEXT_20_SP
                 )
             }, textStyle = TextStyle(
                 color = MaterialTheme.colorScheme.onPrimary,
@@ -185,7 +192,7 @@ fun SearchAppBar(
             ),
             singleLine = true,
             leadingIcon = {
-                IconButton(modifier = Modifier.alpha(alpha = 0.38f),
+                IconButton(modifier = Modifier.alpha(alpha = ICON_ALPHA_0_5),
                     onClick = {}) {
                     Icon(
                         imageVector = Icons.Filled.Search,

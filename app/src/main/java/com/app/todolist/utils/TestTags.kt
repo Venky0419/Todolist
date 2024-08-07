@@ -19,6 +19,9 @@ object TestTags {
     }
 
     object TaskScreen{
-
+        const val TASK_DETAILS_APP_BAR = "task_details_app_bar"
+        const val DELETE_BUTTON_ACTION = "delete_button_action"
+        const val SAVE_BUTTON_ACTION = "save_button_action"
+        const val BACK_BUTTON_ACTION = "back_button_action"
     }
 }

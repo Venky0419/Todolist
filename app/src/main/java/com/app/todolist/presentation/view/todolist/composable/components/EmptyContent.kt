@@ -16,9 +16,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import com.app.todolist.R
-import com.app.todolist.ui.theme.ICON_ALPHA_0_5
 import com.app.todolist.ui.theme.ICON_SIZE_120
 import com.app.todolist.ui.theme.TodolistTheme
+import com.app.todolist.utils.Constants.ICON_ALPHA_0_5
 
 /**
  * Created by P,Venkatesh on 07-Aug-24

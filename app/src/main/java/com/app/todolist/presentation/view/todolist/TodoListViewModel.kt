@@ -39,10 +39,6 @@ class TodoListViewModel @Inject constructor(
     private val action: Action =
         savedStateHandle.getStateFlow("action", EMPTY_STRING).value.toAction()
 
-    init {
-        showMessage()
-    }
-
     private val searchAppBarState = MutableStateFlow(SearchAppBarState.CLOSED)
 
     private val searchTextState = MutableStateFlow(EMPTY_STRING)
@@ -120,6 +116,10 @@ class TodoListViewModel @Inject constructor(
             initialValue = TodoListUiState(loading = true)
         )
 
+    init {
+        showMessage()
+    }
+
     private fun showMessage() {
         when (action) {
             Action.ADD -> {
@@ -127,7 +127,7 @@ class TodoListViewModel @Inject constructor(
             }
 
             Action.DELETE -> {
-                showSnackbar(R.string.delete_success_message)
+                showSnackbar(R.string.delete_success_message, true)
             }
 
             Action.UPDATE -> {
@@ -138,7 +138,7 @@ class TodoListViewModel @Inject constructor(
         }
     }
 
-    fun showSnackbar(text: Int, showUndoAction: Boolean = false) {
+    private fun showSnackbar(text: Int, showUndoAction: Boolean = false) {
         viewModelScope.launch {
             _uiEvent.send(TodoUiEvent.ShowSnackbar(UiText.StringResource(text), showUndoAction))
         }
@@ -168,7 +168,7 @@ class TodoListViewModel @Inject constructor(
         searchTextState.value = text
     }
 
-    fun showSearchBar(){
+    fun showSearchBar() {
         searchAppBarState.value = SearchAppBarState.OPENED
     }
 
