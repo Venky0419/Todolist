@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Todolist</string>
+    <string name="task">Tasks</string>
+    <string name="search_tasks">Search tasks</string>
+    <string name="sort_tasks">Sort tasks</string>
+    <string name="delete_all_tasks">Delete all tasks</string>
+    <string name="search">Search</string>
+    <string name="search_icon">Search icon</string>
+    <string name="close_icon">Close icon</string>
+    <string name="sad_face_icon">SSad face icon</string>
+    <string name="no_tasks_found">No Tasks Found</string>
+    <string name="add_success_message">Task added</string>
+    <string name="delete_success_message">Task deleted</string>
+    <string name="update_success_message">Task saved</string>
+    <string name="undo">UNDO</string>
+    <string name="new_task">New task</string>
+    <string name="add_button">Add</string>
+    <string name="comfirm">Confirm</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="delete_icon">Delete Icon</string>
+    <string name="confirm_action">Confirm action</string>
+    <string name="alert_dialog_text">This action will delete all tasks. Are you sure?</string>
 </resources>

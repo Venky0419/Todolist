@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             TodolistTheme {
                 val navController = rememberNavController()
-                ConfigureNavigation(navController = navController)
+                ConfigureNavigation(navHostController = navController)
             }
         }
     }

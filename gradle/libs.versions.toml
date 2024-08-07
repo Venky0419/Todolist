@@ -7,7 +7,7 @@ junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.4"
 activityCompose = "1.9.1"
-composeBom = "2024.04.01"
+composeBom = "2024.06.00"
 appcompat = "1.7.0"
 room = "2.6.1"
 hilt = "2.51.1"
@@ -16,9 +16,9 @@ navigation = "2.7.7"
 mockito = "3.12.4"
 viewmodelCompose = "2.8.4"
 androidxTest = "1.6.1"
-kotlinx = "2.40.5"
 coreSplash = "1.0.1"
 foundationLayoutAndroid = "1.6.8"
+hiltNavigation = "1.2.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -45,10 +45,10 @@ androidx-datastore = {group = "androidx.datastore", name = "datastore-preference
 dagger-hilt = {group = "com.google.dagger", name = "hilt-android", version.ref = "hilt"}
 dagger-hilt-compiler = {group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt"}
 androidx-navigation-compose = {group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation"}
+androidx-hilt-navigation-compose = {group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigation"}
 androidx-lifecycle-viewmodel = {group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "viewmodelCompose"}
 mockito-core = {group = "org.mockito", name = "mockito-core", version.ref = "mockito"}
 mockito-inline = {group = "org.mockito", name = "mockito-inline", version.ref = "mockito"}
-kotlinx-coroutines-android = {group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinx"}
 androidx-core-splash = {group = "androidx.core", name = "core-splashscreen", version.ref = "coreSplash"}
 androidx-foundation-layout-android = { group = "androidx.compose.foundation", name = "foundation-layout-android", version.ref = "foundationLayoutAndroid" }
 

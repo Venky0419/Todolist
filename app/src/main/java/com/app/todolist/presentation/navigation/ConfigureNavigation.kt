@@ -9,8 +9,8 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import com.app.todolist.presentation.view.composables.TodoListComposable
-import com.app.todolist.presentation.view.composables.TodoTaskComposable
+import com.app.todolist.presentation.view.todolist.composable.TodoListComposable
+import com.app.todolist.presentation.view.todotask.composable.TodoTaskComposable
 import com.app.todolist.utils.Constants.LIST_ARG_KEY
 import com.app.todolist.utils.Constants.LIST_SCREEN
 import com.app.todolist.utils.Constants.TASK_ARG_KEY
