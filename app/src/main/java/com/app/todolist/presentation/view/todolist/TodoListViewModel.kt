@@ -39,9 +39,9 @@ class TodoListViewModel @Inject constructor(
     private val action: Action =
         savedStateHandle.getStateFlow("action", EMPTY_STRING).value.toAction()
 
-    private val searchAppBarState = MutableStateFlow(SearchAppBarState.CLOSED)
+    val searchAppBarState = MutableStateFlow(SearchAppBarState.CLOSED)
 
-    private val searchTextState = MutableStateFlow(EMPTY_STRING)
+    val searchTextState = MutableStateFlow(EMPTY_STRING)
 
     private val sort: MutableStateFlow<Priority> =
         MutableStateFlow(preferences.loadPriority())
@@ -180,4 +180,3 @@ class TodoListViewModel @Inject constructor(
         }
     }
 }
-

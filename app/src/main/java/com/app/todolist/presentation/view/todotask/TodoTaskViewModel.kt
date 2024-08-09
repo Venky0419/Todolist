@@ -74,7 +74,6 @@ class TodoTaskViewModel @Inject constructor(
     }
 
     fun titleChange(title: String) {
-        if (title.length < 21) {
             _uiState.update {
                 _uiState.value.copy(
                     loading = false,
@@ -82,7 +81,6 @@ class TodoTaskViewModel @Inject constructor(
                     error = null
                 )
             }
-        }
     }
 
 
@@ -142,6 +140,4 @@ class TodoTaskViewModel @Inject constructor(
     private suspend fun returnToList(action: Action) {
         _uiEvent.send(TodoUiTaskEvent.NavigationBackEvent(action))
     }
-
-
 }

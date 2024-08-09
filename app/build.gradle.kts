@@ -93,7 +93,7 @@ dependencies {
     androidTestImplementation(libs.androidx.test.runner)
     androidTestImplementation(libs.androidx.test.rules)
     testImplementation(libs.mockito.kotlin)
-
+    testImplementation(libs.androidx.arch.core)
     testImplementation(libs.kotlinx.coroutines)
     androidTestImplementation(libs.mockito.kotlin)
 }
