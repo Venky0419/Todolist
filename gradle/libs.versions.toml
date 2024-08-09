@@ -13,12 +13,17 @@ room = "2.6.1"
 hilt = "2.51.1"
 datastore = "1.1.1"
 navigation = "2.7.7"
-mockito = "3.12.4"
+mockito = "4.1.0"
 viewmodelCompose = "2.8.4"
 androidxTest = "1.6.1"
 coreSplash = "1.0.1"
 foundationLayoutAndroid = "1.6.8"
 hiltNavigation = "1.2.0"
+junitJupiter = "5.8.1"
+mockitoAndroid = "4.1.0"
+mockitoKotlin = "3.2.0"
+archCore = "2.2.0"
+kotlinxCoroutineTest = "1.8.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -34,7 +39,7 @@ androidx-ui = { group = "androidx.compose.ui", name = "ui" }
 androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
-androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest", version = "1.7.0-beta06" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest", version = "1.7.0-beta07" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
@@ -49,8 +54,14 @@ androidx-hilt-navigation-compose = {group = "androidx.hilt", name = "hilt-naviga
 androidx-lifecycle-viewmodel = {group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "viewmodelCompose"}
 mockito-core = {group = "org.mockito", name = "mockito-core", version.ref = "mockito"}
 mockito-inline = {group = "org.mockito", name = "mockito-inline", version.ref = "mockito"}
+mockito-android = {group = "org.mockito", name = "mockito-android", version.ref = "mockitoAndroid"}
+mockito-kotlin = {group = "org.mockito.kotlin", name = "mockito-kotlin", version.ref = "mockitoKotlin"}
 androidx-core-splash = {group = "androidx.core", name = "core-splashscreen", version.ref = "coreSplash"}
 androidx-foundation-layout-android = { group = "androidx.compose.foundation", name = "foundation-layout-android", version.ref = "foundationLayoutAndroid" }
+junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junitJupiter" }
+androidx-arch-core = { group = "androidx.arch.core", name = "core-testing", version.ref = "archCore" }
+kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutineTest" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

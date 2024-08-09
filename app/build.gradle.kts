@@ -73,6 +73,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.core.splash)
     implementation(libs.dagger.hilt)
+    testImplementation(libs.junit.jupiter)
     kapt(libs.dagger.hilt.compiler)
     implementation(libs.androidx.room)
     kapt(libs.androidx.room.compiler)
@@ -87,6 +88,12 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     testImplementation(libs.mockito.core)
     testImplementation(libs.mockito.inline)
+    testImplementation(libs.mockito.android)
+    androidTestImplementation(libs.mockito.android)
     androidTestImplementation(libs.androidx.test.runner)
     androidTestImplementation(libs.androidx.test.rules)
+    testImplementation(libs.mockito.kotlin)
+
+    testImplementation(libs.kotlinx.coroutines)
+    androidTestImplementation(libs.mockito.kotlin)
 }
