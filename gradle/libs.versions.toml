@@ -24,6 +24,7 @@ mockitoAndroid = "4.1.0"
 mockitoKotlin = "3.2.0"
 archCore = "2.2.0"
 kotlinxCoroutineTest = "1.8.0"
+mockk = "1.13.5"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -61,7 +62,7 @@ androidx-foundation-layout-android = { group = "androidx.compose.foundation", na
 junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junitJupiter" }
 androidx-arch-core = { group = "androidx.arch.core", name = "core-testing", version.ref = "archCore" }
 kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutineTest" }
-
+mockk-kotlin = {group = "io.mockk", name="mockk", version.ref = "mockk"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

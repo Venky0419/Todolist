@@ -25,7 +25,7 @@ import org.mockito.kotlin.verify
 import org.mockito.kotlin.whenever
 
 @OptIn(ExperimentalCoroutinesApi::class)
-class TodoRepositoryImplTest {
+open class TodoRepositoryImplTest {
     private lateinit var todoRepository: TodoRepository
     private val todoDao: TodoDao = mock()
     private val testDispatcher = UnconfinedTestDispatcher()

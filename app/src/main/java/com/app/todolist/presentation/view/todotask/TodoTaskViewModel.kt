@@ -65,9 +65,9 @@ class TodoTaskViewModel @Inject constructor(
 
     fun priorityChange(priority: Priority) {
         _uiState.update {
-            _uiState.value.copy(
+            it.copy(
                 loading = false,
-                todoTaskModel = _uiState.value.todoTaskModel?.copy(priority = priority.ordinal),
+                todoTaskModel = it.todoTaskModel?.copy(priority = priority.ordinal),
                 error = null
             )
         }
@@ -75,9 +75,9 @@ class TodoTaskViewModel @Inject constructor(
 
     fun titleChange(title: String) {
             _uiState.update {
-                _uiState.value.copy(
+                it.copy(
                     loading = false,
-                    todoTaskModel = _uiState.value.todoTaskModel?.copy(title = title),
+                    todoTaskModel = it.todoTaskModel?.copy(title = title),
                     error = null
                 )
             }
@@ -86,9 +86,9 @@ class TodoTaskViewModel @Inject constructor(
 
     fun descriptionChange(description: String) {
         _uiState.update {
-            _uiState.value.copy(
+            it.copy(
                 loading = false,
-                todoTaskModel = _uiState.value.todoTaskModel?.copy(description = description),
+                todoTaskModel = it.todoTaskModel?.copy(description = description),
                 error = null
             )
         }
