@@ -21,8 +21,9 @@ import com.app.todolist.ui.theme.TodolistTheme
 import com.app.todolist.utils.Constants.ICON_ALPHA_0_5
 
 /**
- * Created by P,Venkatesh on 07-Aug-24
+ * [EmptyContent] is a composable function that displays an empty content message when there are no tasks.
  *
+ * Created by P,Venkatesh on 07-Aug-24
  */
 @Composable
 fun EmptyContent() {

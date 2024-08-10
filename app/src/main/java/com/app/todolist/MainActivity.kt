@@ -10,6 +10,13 @@ import com.app.todolist.presentation.navigation.ConfigureNavigation
 import com.app.todolist.ui.theme.TodolistTheme
 import dagger.hilt.android.AndroidEntryPoint
 
+/**
+ * [MainActivity] is the entry point of the application.
+ * It sets up the main UI content and navigation. It also handles the splash screen.
+ * It extends [ComponentActivity]. It uses Hilt for dependency injection.
+ *
+ * Created by P,Venkatesh on 06-Aug-24
+ */
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

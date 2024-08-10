@@ -17,8 +17,10 @@ import com.app.todolist.utils.Constants.TASK_ARG_KEY
 import com.app.todolist.utils.Constants.TASK_SCREEN
 
 /**
- * Created by P,Venkatesh on 06-Aug-24
+ * [ConfigureNavigation] is a composable function that configures the navigation for the app.
+ * @param navHostController [NavHostController] - The navigation controller for the app.
  *
+ * Created by P,Venkatesh on 06-Aug-24
  */
 @Composable
 fun ConfigureNavigation(navHostController: NavHostController) {

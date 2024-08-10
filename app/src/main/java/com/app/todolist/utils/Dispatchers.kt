@@ -3,8 +3,14 @@ package com.app.todolist.utils
 import kotlinx.coroutines.CoroutineDispatcher
 
 /**
- * Created by P,Venkatesh on 07-Aug-24
+ * [AppDispatchers] dispatchers for default, main and io operations of coroutines
+ * @property default [CoroutineDispatcher] default dispatcher for coroutines
+ * @property main [CoroutineDispatcher] main dispatcher for coroutines
+ * @property io [CoroutineDispatcher] io dispatcher for coroutines
  *
+ * companion object for testing purpose [createTestDispatchers]
+ *
+ * Created by P,Venkatesh on 07-Aug-24
  */
 class AppDispatchers(
     val default: CoroutineDispatcher,

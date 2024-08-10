@@ -8,8 +8,9 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 
 /**
- * Created by P,Venkatesh on 07-Aug-24
+ * [BindsModule] is a Dagger module that provides bindings for interfaces.
  *
+ * Created by P,Venkatesh on 07-Aug-24
  */
 @Module
 @InstallIn(SingletonComponent::class)

@@ -19,8 +19,13 @@ import com.app.todolist.ui.theme.TodolistTheme
 import com.app.todolist.utils.TestTags
 
 /**
- * Created by P,Venkatesh on 07-Aug-24
+ * [AppBarEditTask] composable for edit task screen top app bar with delete
+ * and save actions and back action icon button and returns it
+ * @param onBackPressed [() -> Unit] lambda function to handle back button click
+ * @param onDeleteClicked [() -> Unit] lambda function to handle delete button click
+ * @param onSaveClicked [() -> Unit] lambda function to handle save button click
  *
+ * Created by P,Venkatesh on 07-Aug-24
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -51,8 +56,6 @@ fun AppBarEditTask(
         },
     )
 }
-
-
 
 @Composable
 fun DeleteAction(onDeleteClicked: () -> Unit) {
@@ -85,5 +88,3 @@ fun TodoAppBarEditTaskDarkModePreview(){
         }
     }
 }
-
-

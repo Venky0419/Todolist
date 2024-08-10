@@ -12,10 +12,15 @@ import com.app.todolist.utils.Constants.EMPTY_STRING
 import com.app.todolist.utils.SearchAppBarState
 import com.app.todolist.utils.UiText
 import junit.framework.TestCase.assertEquals
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.test.UnconfinedTestDispatcher
 import kotlinx.coroutines.test.advanceUntilIdle
+import kotlinx.coroutines.test.resetMain
 import kotlinx.coroutines.test.runTest
+import kotlinx.coroutines.test.setMain
+import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -38,12 +43,19 @@ class TodoListViewModelTest {
     @get:Rule
     val mainDispatcherRule = MainDispatcherRule()
 
+    private val testDispatcher = UnconfinedTestDispatcher()
+
     @Before
     fun setUp() {
+        Dispatchers.setMain(testDispatcher)
         savedStateHandle = SavedStateHandle()
         viewModel = TodoListViewModel(savedStateHandle, todoRepository, preferences)
     }
 
+    @After
+    fun tearDown() {
+        Dispatchers.resetMain()
+    }
 
     @Test
     fun `getUiEvent on ADD action sends ShowSnackbar event`() = runTest {
@@ -97,7 +109,6 @@ class TodoListViewModelTest {
     @Test
     fun `deleteAllTasks calls repository deleteAll`() = runTest {
         viewModel.deleteAllTasks()
-        advanceUntilIdle() // Allow coroutines to complete
         verify(todoRepository).deleteAll()
     }
 
@@ -113,7 +124,6 @@ class TodoListViewModelTest {
         val task = TodoTaskModel(1, "Deleted Task", "", Priority.HIGH.ordinal)
         whenever(preferences.getLastTask()).thenReturn(task)
         viewModel.undoDeletedTask()
-        advanceUntilIdle()
         verify(todoRepository).addTask(task)
         verify(preferences).saveTask(TodoTaskModel.EmptyModel)
     }

@@ -45,8 +45,14 @@ import com.app.todolist.utils.Constants.ICON_ALPHA_0_5
 import com.app.todolist.utils.Constants.TEXT_WEIGHT_1_5
 
 /**
- * Created by P,Venkatesh on 07-Aug-24
+ * [PriorityDropDown] fun to show priority drop down menu with arrow icon and
+ * dropdown menu items with priority values in it and returns it.
+ * and updates the priority in database based on selection of item in dropdown menu
+ * @param priority [Priority] priority value from database
+ * @param modifier [Modifier] modifier for priority drop down
+ * @param onPrioritySelected [Priority] priority value from database
  *
+ * Created by P,Venkatesh on 07-Aug-24
  */
 @Composable
 fun PriorityDropDown(

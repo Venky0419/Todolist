@@ -1,12 +1,13 @@
 package com.app.todolist.utils
 
 /**
- * Created by P,Venkatesh on 07-Aug-24
+ * [TestTags] test tags used in composables for testing purpose only in compose testing environment
  *
+ * Created by P,Venkatesh on 07-Aug-24
  */
 object TestTags {
 
-    object ListScreen{
+    object ListScreen {
         const val FAB_BUTTON = "floating_button"
         const val DEFAULT_APP_BAR = "default_app_bar"
         const val SEARCH_BUTTON_ACTION = "search_button_action"
@@ -18,7 +19,7 @@ object TestTags {
         const val TASKS_LIST = "tasks_list"
     }
 
-    object TaskScreen{
+    object TaskScreen {
         const val TASK_DETAILS_APP_BAR = "task_details_app_bar"
         const val DELETE_BUTTON_ACTION = "delete_button_action"
         const val SAVE_BUTTON_ACTION = "save_button_action"

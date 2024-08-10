@@ -47,8 +47,11 @@ import com.app.todolist.utils.UiText
 import kotlinx.coroutines.launch
 
 /**
- * Created by P,Venkatesh on 06-Aug-24
+ * [TodoListComposable] TodoList Composable function to show the list of tasks.
+ * @param viewModel [TodoListViewModel] view model to get the data from repository
+ * @param onClickTask [() -> Unit] callback to navigate to task details screen
  *
+ * Created by P,Venkatesh on 06-Aug-24
  */
 @Composable
 fun TodoListComposable(

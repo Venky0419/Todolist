@@ -9,8 +9,10 @@ import com.app.todolist.data.entities.TodoEntity
 import kotlinx.coroutines.flow.Flow
 
 /**
- * Created by P,Venkatesh on 06-Aug-24
+ * [TodoDao] is the Data Access Object for the database.
+ * It provides access to the database and contains the database queries.
  *
+ * Created by P,Venkatesh on 06-Aug-24
  */
 @Dao
 interface TodoDao {

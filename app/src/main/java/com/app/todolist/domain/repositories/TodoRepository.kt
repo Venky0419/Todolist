@@ -4,8 +4,10 @@ import com.app.todolist.domain.models.TodoTaskModel
 import kotlinx.coroutines.flow.Flow
 
 /**
- * Created by P,Venkatesh on 07-Aug-24
+ * [TodoRepository] is an interface data layer
+ * to handle communication with any data source such as Server or local database.
  *
+ * Created by P,Venkatesh on 07-Aug-24
  */
 
 interface TodoRepository {

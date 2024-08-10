@@ -15,8 +15,9 @@ import kotlinx.coroutines.Dispatchers
 import javax.inject.Singleton
 
 /**
- * Created by P,Venkatesh on 06-Aug-24
+ * [AppModule] is a Dagger module that provides dependencies for the application.
  *
+ * Created by P,Venkatesh on 06-Aug-24
  */
 @Module
 @InstallIn(SingletonComponent::class)

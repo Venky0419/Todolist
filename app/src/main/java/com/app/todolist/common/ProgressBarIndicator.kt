@@ -8,8 +8,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
 /**
- * Created by P,Venkatesh on 07-Aug-24
+ * [ProgressBarIndicator] is a composable function that displays a circular progress indicator
+ * in the center of the screen.
  *
+ * Created by P,Venkatesh on 07-Aug-24
  */
 @Composable
 fun ProgressBarIndicator() {

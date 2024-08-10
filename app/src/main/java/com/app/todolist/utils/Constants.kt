@@ -1,8 +1,9 @@
 package com.app.todolist.utils
 
 /**
- * Created by P,Venkatesh on 06-Aug-24
+ * [Constants] constants used in the app project
  *
+ * Created by P,Venkatesh on 06-Aug-24
  */
 object Constants {
 

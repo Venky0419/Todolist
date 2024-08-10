@@ -30,7 +30,6 @@ open class TodoRepositoryImplTest {
     private val todoDao: TodoDao = mock()
     private val testDispatcher = UnconfinedTestDispatcher()
 
-
     @Before
     fun setup() {
         Dispatchers.setMain(testDispatcher)

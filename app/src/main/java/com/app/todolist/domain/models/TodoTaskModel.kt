@@ -4,8 +4,14 @@ import com.app.todolist.utils.Constants.EMPTY_STRING
 
 
 /**
- * Created by P,Venkatesh on 07-Aug-24
+ * [TodoTaskModel] is a data class representing a task in the todo list.
+ * @property id [Int] - Task Id [Primary Key] of the table [todo_table] in database [TodoDatabase] in Room Database Library of Android Architecture Components.
+ * @property title [String] - Title of the task.
+ * @property description [String] - Description of the task.
+ * @property priority [Int] - Priority of the task.
+ * It also has a companion object with an empty [TodoTaskModel] model.
  *
+ * Created by P,Venkatesh on 07-Aug-24
  */
 data class TodoTaskModel(
     val id: Int,

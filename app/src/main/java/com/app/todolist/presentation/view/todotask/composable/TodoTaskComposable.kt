@@ -23,6 +23,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.app.todolist.R
 import com.app.todolist.domain.models.Priority
+import com.app.todolist.presentation.view.todolist.TodoListUiState
 import com.app.todolist.presentation.view.todotask.TodoTaskViewModel
 import com.app.todolist.presentation.view.todotask.TodoUiTaskEvent
 import com.app.todolist.presentation.view.todotask.components.AppBarEditTask
@@ -34,8 +35,11 @@ import com.app.todolist.utils.Action
 import kotlinx.coroutines.launch
 
 /**
- * Created by P,Venkatesh on 06-Aug-24
+ * [TodoTaskComposable] TodoTaskComposable is a Composable function that is used to display the todo task screen.
+ * @param viewModel [TodoTaskViewModel] = hiltViewModel() function to get the view model instance
+ * @param navigateToList [() -> Unit] lambda function to navigate to list screen with action parameter passed to it
  *
+ * Created by P,Venkatesh on 06-Aug-24
  */
 @Composable
 fun TodoTaskComposable(

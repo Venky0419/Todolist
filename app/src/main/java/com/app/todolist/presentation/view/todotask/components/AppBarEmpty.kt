@@ -12,6 +12,8 @@ import com.app.todolist.utils.Constants.EMPTY_STRING
 import com.app.todolist.utils.TestTags
 
 /**
+ * [AppBarEmpty] fun to show empty app bar with back button and no title text
+ * @param onBackPressed [() -> Unit] lambda function to handle back button click
  * Created by P,Venkatesh on 07-Aug-24
  *
  */

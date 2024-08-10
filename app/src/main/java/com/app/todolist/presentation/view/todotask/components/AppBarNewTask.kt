@@ -20,8 +20,11 @@ import com.app.todolist.ui.theme.TodolistTheme
 import com.app.todolist.utils.TestTags
 
 /**
- * Created by P,Venkatesh on 07-Aug-24
+ * [AppBarNewTask] fun to create new task app bar with back and save button
+ * @param onBackPressed [() -> Unit] lambda function to handle back button click
+ * @param onSaveClicked [() -> Unit] lambda function to handle save button click
  *
+ * Created by P,Venkatesh on 07-Aug-24
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

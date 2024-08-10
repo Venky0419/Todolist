@@ -13,8 +13,10 @@ import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 /**
- * Created by P,Venkatesh on 07-Aug-24
+ * [TodoRepository] implementation using [TodoDao] to interact with the database.
+ * This class provides methods to perform CRUD operations on the tasks in the database.
  *
+ * Created by P,Venkatesh on 07-Aug-24
  */
 class TodoRepositoryImpl @Inject constructor(private val todoDao: TodoDao) : TodoRepository {
     override val getAllTasks: Flow<List<TodoTaskModel>>

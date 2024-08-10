@@ -8,14 +8,21 @@ import com.app.todolist.domain.preferences.Preferences
 import com.app.todolist.utils.Constants.EMPTY_STRING
 
 /**
- * Created by P,Venkatesh on 07-Aug-24
+ * [DefaultPreferences] is a class that implements the
+ * [Preferences] interface and provides default implementations for the methods.
+ * It uses SharedPreferences to store and retrieve data.
  *
+ * Created by P,Venkatesh on 07-Aug-24
  */
 class DefaultPreferences(private val sharedPreferences: SharedPreferences) : Preferences {
     override fun saveSort(priority: Priority) {
         sharedPreferences.edit().putString(Preferences.KEY_SORT, priority.name).apply()
     }
 
+    /**
+     * [loadPriority] is a method that retrieves the priority from SharedPreferences.
+     * @return Priority object representing the loaded priority.
+     * */
     override fun loadPriority(): Priority {
         val priority = sharedPreferences.getString(
             Preferences.KEY_SORT,
@@ -24,6 +31,10 @@ class DefaultPreferences(private val sharedPreferences: SharedPreferences) : Pre
         return priority?.toEnum() ?: Priority.NONE
     }
 
+    /**
+     * [saveTask] is a method that saves a TodoTaskModel object to SharedPreferences.
+     * It uses the SharedPreferences editor to perform the save operation.
+     * */
     override fun saveTask(todoTaskModel: TodoTaskModel) {
         sharedPreferences.edit().putInt(Preferences.KEY_TASK_ID, todoTaskModel.id).apply()
 
@@ -36,6 +47,10 @@ class DefaultPreferences(private val sharedPreferences: SharedPreferences) : Pre
             .apply()
     }
 
+    /**
+     * [getLastTask]
+     * It retrieves the last saved TodoTaskModel object from SharedPreferences.
+     * */
     override fun getLastTask(): TodoTaskModel {
         return try {
             val id = sharedPreferences.getInt(Preferences.KEY_TASK_ID, -1)
@@ -47,6 +62,4 @@ class DefaultPreferences(private val sharedPreferences: SharedPreferences) : Pre
             TodoTaskModel.EmptyModel
         }
     }
-
-
 }

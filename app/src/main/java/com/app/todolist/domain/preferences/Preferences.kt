@@ -4,8 +4,9 @@ import com.app.todolist.domain.models.Priority
 import com.app.todolist.domain.models.TodoTaskModel
 
 /**
- * Created by P,Venkatesh on 07-Aug-24
+ * [Preferences] is an interface that provides methods for saving and retrieving user preferences.
  *
+ * Created by P,Venkatesh on 07-Aug-24
  */
 interface Preferences {
 

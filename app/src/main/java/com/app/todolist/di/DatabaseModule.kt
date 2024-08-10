@@ -12,8 +12,10 @@ import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 /**
- * Created by P,Venkatesh on 06-Aug-24
+ * [DatabaseModule] is a Dagger module that provides Database instance
+ * and DAO instance for the application
  *
+ * Created by P,Venkatesh on 06-Aug-24
  */
 @Module
 @InstallIn(SingletonComponent::class)

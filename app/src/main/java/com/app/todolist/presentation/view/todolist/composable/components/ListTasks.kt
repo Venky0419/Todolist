@@ -33,8 +33,13 @@ import com.app.todolist.utils.Constants.TEXT_WEIGHT_8
 import com.app.todolist.utils.TestTags
 
 /**
- * Created by P,Venkatesh on 07-Aug-24
+ * [ListTasks] is a composable function that displays a list of tasks.
+ * @param tasks [List<TodoTaskModel>] default empty list for tasks list
+ * @param innerPadding [PaddingValues] default padding values for inner padding
+ * @param listState [LazyListState] default lazy list state
+ * @param onTasksSelected [TodoTaskModel] callback function to handle task selection
  *
+ * Created by P,Venkatesh on 07-Aug-24
  */
 @Composable
 fun ListTasks(
@@ -95,43 +100,46 @@ fun TaskItem(todoTaskModel: TodoTaskModel, onTasksSelected: (TodoTaskModel) -> U
                     }
                 }
             }
-            
+
             Text(
                 text = todoTaskModel.description,
                 modifier = Modifier.fillMaxWidth(),
                 style = MaterialTheme.typography.titleMedium,
                 maxLines = 2,
-                overflow = TextOverflow.Ellipsis)
+                overflow = TextOverflow.Ellipsis
+            )
         }
     }
-    
-    
+
+
 }
 
 @Preview
 @Composable
-fun TaskItemsPreview(){
-    TaskItem(todoTaskModel = TodoTaskModel(
-        id = 1,
-        title = "Test Task",
-        description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
-        priority = Priority.HIGH.ordinal
-    )
-    ) {
-        
-    }
-}
-
-@Preview
-@Composable
-fun TaskItemsDarkModePreview(){
-    TodolistTheme(darkTheme = true) {
-        TaskItem(todoTaskModel = TodoTaskModel(
+fun TaskItemsPreview() {
+    TaskItem(
+        todoTaskModel = TodoTaskModel(
             id = 1,
             title = "Test Task",
             description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
             priority = Priority.HIGH.ordinal
         )
+    ) {
+
+    }
+}
+
+@Preview
+@Composable
+fun TaskItemsDarkModePreview() {
+    TodolistTheme(darkTheme = true) {
+        TaskItem(
+            todoTaskModel = TodoTaskModel(
+                id = 1,
+                title = "Test Task",
+                description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+                priority = Priority.HIGH.ordinal
+            )
         ) {
 
         }

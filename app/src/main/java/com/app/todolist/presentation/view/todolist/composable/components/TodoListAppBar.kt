@@ -60,8 +60,12 @@ import com.app.todolist.utils.TestTags.ListScreen.SEARCH_TEXT_INPUT
 import com.app.todolist.utils.TestTags.ListScreen.SORT_BUTTON_ACTION
 
 /**
- * Created by P,Venkatesh on 07-Aug-24
+ * [DefaultAppBar] is a composable function that represents the default app bar in the list screen.
+ * @param onOpenSearchBarClicked [() -> Unit] lambda function to be called when the search button is clicked.
+ * @param onPriorityChanged [() -> Unit] lambda function to be called when the priority button is clicked.
+ * @param onDeleteAllClicked [() -> Unit] lambda function to be called when the delete all button is clicked.
  *
+ * Created by P,Venkatesh on 07-Aug-24
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
