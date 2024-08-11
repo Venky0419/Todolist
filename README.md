@@ -13,8 +13,24 @@ Welcome to the TODO App! This is a simple Android application designed to help u
 
 ## Screenshots
 
-![Screenshot 1](screenshots/screenshot1.png)
-![Screenshot 2](screenshots/screenshot2.png)
+![Screenshot 1](screenshots/list_with_content.png)
+![Screenshot 2](screenshots/list_no_task.png)
+![Screenshot 3](screenshots/new_task.png)
+![Screenshot 4](screenshots/delete_all.png)
+![Screenshot 5](screenshots/delete_all_dark.png)
+![Screenshot 6](screenshots/edit_task.png)
+![Screenshot 7](screenshots/list_dark.png)
+![Screenshot 8](screenshots/low_priority_task.png)
+![Screenshot 9](screenshots/new_task_dark.png)
+![Screenshot 10](screenshots/priority_dark.png)
+![Screenshot 11](screenshots/search_dark.png)
+![Screenshot 12](screenshots/search_option.png)
+![Screenshot 13](screenshots/sort_by_priority.png)
+![Screenshot 14](screenshots/task_creation_message.png)
+![Screenshot 15](screenshots/task_delete_dark.png)
+![Screenshot 16](screenshots/task_update_dark.png)
+![Screenshot 17](screenshots/undo_task.png)
+
 
 ## Installation
 
